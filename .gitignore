@@ -1,0 +1,4 @@
+*.cache
+vendor/
+logs/
+.DS_STORE

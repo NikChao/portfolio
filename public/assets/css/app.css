@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Roca Two";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Roca_Two_Thin.ttf") format('truetype');
+
+}
+
+@font-face {
+  font-family: "Roca Two";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/assets/fonts/Roca_Two_Bold.ttf") format('truetype');
+
+}
+
+@font-face {
+  font-family: "Forma Djr";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Forma_Djr_Thin.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "Forma Djr";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/assets/fonts/Forma_Djr_Bold.otf") format('opentype');
+}
+
+:root {
+  --padding-xs: 4px;
+  --padding-sm: 8px;
+  --padding-md: 16px;
+  --padding-lg: 32px;
+  --padding-xl: 64px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: Roca Two;
+  font-weight: 300;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p,
+span,
+a,
+button,
+ul,
+li {
+  font-family: Forma Djr;
+}
+
+.menu,
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.page {
+  padding: var(--padding-xl);
+  padding-top: 0;
+}
+
+.container {
+  padding: 16px 0;
+}
+
+/** ========== Components ========== */
+.icon-btn {
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.icon-btn:active {
+  transform: scale(0.95);
+}
+
+.nav {
+  padding: 32px 64px 32px 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-end {
+  display: flex;
+  gap: 16px;
+}
+
+@media print {
+  .nav {
+    display: none;
+  }
+
+  .pagebreak {
+    clear: both;
+    page-break-after: always;
+  }
+
+}
+
+@media only screen and (max-width: 720px) {
+  .nav {
+    padding: 32px;
+    padding-bottom: 0;
+  }
+
+  .page {
+    padding: var(--padding-lg);
+  }
+
+}

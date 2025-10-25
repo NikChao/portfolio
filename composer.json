@@ -1,0 +1,14 @@
+{
+  "name": "nik/vanillaweb",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Nik C"
+    }
+  ],
+  "require": {
+    "monolog/monolog": "^3.9",
+    "league/commonmark": "^2.7",
+    "nesbot/carbon": "^3.10"
+  }
+}

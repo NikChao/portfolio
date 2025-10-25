@@ -1,0 +1,45 @@
+.cv-section {
+  padding-top: 64px;
+}
+
+.blog-post {
+  padding: 64px;
+  padding-top: 0;
+}
+
+.blog-post p,
+.blog-post h4,
+.blog-post h5,
+.blog-post h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-family: Forma Djr;
+}
+
+.blog-post h2,
+.blog-post h3 {
+  padding-top: 32px;
+}
+
+.blog-post hr {
+  margin-top: 32px;
+  box-sizing: border-box;
+}
+
+.blog-post ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post ul>li+li {}
+
+.blog-post li {
+  padding: 4px 0;
+}
+
+@media only screen and (max-width: 720px) {
+  .blog-post {
+    padding: 16px 32px 32px 32px;
+  }
+}
